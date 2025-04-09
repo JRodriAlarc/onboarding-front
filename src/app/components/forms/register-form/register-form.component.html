@@ -1,0 +1,32 @@
+<form class="flex flex-col gap-3">
+    <div class="flex flex-row gap-4">
+        <div class="md:w-1/2">
+            <label for="firstName" class="mb-2 font-bold">Nombre</label>
+            <input type="firstName" id="firstName" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese su nombre" />
+        </div>
+    
+        <div class="md:w-1/2">
+            <label for="lastName" class="mb-2 font-bold">Apellidos</label>
+            <input type="lastName" id="lastName" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese sus apellidos" />
+        </div>
+    </div>
+
+    <div>
+        <label for="email" class="mb-2 font-bold">Correo Electrónico</label>
+        <input type="email" id="email" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese su correo electrónico" />
+    </div>
+    
+    <div class="mb-4">
+        <label for="password" class="mb-2 font-bold">Contraseña</label>
+        <input type="password" id="password" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese su contraseña" />
+    </div>
+
+    <div class="flex items-start mb-5">
+        <div class="flex items-center h-5">
+            <input id="termsConditions" type="checkbox" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-[#3eb6a8]" />
+        </div>
+        <label for="termsConditions" class="ms-2 text-sm font-medium text-gray-900">Acepto los <span class="text-[#0097b2] underline">términos y condiciones</span></label>
+    </div>
+
+    <button type="submit" class="bg-[#3eb6a8] text-white font-bold px-6 py-2 rounded-2xl cursor-pointer self-center">Regístrate Ahora</button>
+</form>
