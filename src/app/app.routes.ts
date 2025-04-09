@@ -1,25 +1,41 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { StatusComponent } from './components/status/status.component';
-import { LoginFormComponent } from './components/forms/login-form/login-form.component';
 import { InformationFormComponent } from './components/forms/information-form/information-form.component';
 import { LocationFormComponent } from './components/forms/location-form/location-form.component';
 import { DocumentsFormComponent } from './components/forms/documents-form/documents-form.component';
 import { SettingsFormComponent } from './components/forms/settings-form/settings-form.component';
+import { HeaderFormsComponent } from './components/header-forms/header-forms.component';
+import { LoginFormComponent } from './components/forms/login-form/login-form.component';
+import { RegisterFormComponent } from './components/forms/register-form/register-form.component';
+import { AuthComponent } from './pages/auth/auth.component';
 
 export const routes: Routes = [
     {
-        path: '',
-        title: 'Inicia Sesión',
-        component: LoginComponent,
+        path: 'auth',
+        component: AuthComponent,
         children: [
-            {
+          {
+            path: '',
+            component: HeaderFormsComponent,
+            children: [
+              {
+                path: 'login',
+                component: LoginFormComponent,
+                title: 'Inicia Sesión'
+              },
+              {
+                path: 'register',
+                component: RegisterFormComponent,
+                title: 'Crea una Cuenta'
+              },
+              {
                 path: '',
-                pathMatch: 'full',
-                component: LoginFormComponent
-
-            }
+                redirectTo: 'login',
+                pathMatch: 'full'
+              }
+            ]
+          }
         ]
     },
     {
@@ -56,7 +72,7 @@ export const routes: Routes = [
     },
     {
         path: '**',
-        redirectTo: '',
+        redirectTo: 'auth',
         pathMatch: 'full'
     }
 ];
