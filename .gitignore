@@ -5,20 +5,29 @@
 /tmp
 /out-tsc
 /bazel-out
+/build
+/temp
 
 # Node
 /node_modules
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # IDEs and editors
 .idea/
 .project
 .classpath
 .c9/
+*.iml
 *.launch
 .settings/
 *.sublime-workspace
+*.sublime-project
 
 # Visual Studio Code
 .vscode/*
@@ -40,3 +49,27 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Backup files
+*.bak
+*.old
+*.orig
+*.swp
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Git
+.gitignore
+
+# Angular
+.angular/
+.angular/cache/
+
+# Environment variables
+.env
+.env.*.local
