@@ -1,0 +1,21 @@
+<h1 class="font-bold text-xl text-[#444040] my-5">Progreso del Onboarding</h1>
+<article class="w-full flex gap-10">
+    <app-card 
+        class="w-1/3" 
+        [text]="'Información Personal'"
+        [iconClass]="'fa-solid fa-triangle-exclamation text-[#ffbd59]'" 
+        [buttonText]="'Continuar Registro'"
+        [buttonLink]="'/home/information'" />
+    <app-card 
+        class="w-1/3" 
+        [text]="'Dirección'" 
+        [iconClass]="'fa-solid fa-circle-check text-[#1ab059]'"
+        [buttonText]="'Actualizar Dirección'" 
+        [buttonLink]="'/home/location'" />
+    <app-card 
+        class="w-1/3" 
+        [text]="'Documentación'" 
+        [iconClass]="'fa-solid fa-circle-xmark text-[red]'"
+        [buttonText]="'Subir Documentos'" 
+        [buttonLink]="'/home/documents'" />
+</article>
