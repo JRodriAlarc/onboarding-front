@@ -1,0 +1,18 @@
+<div class="max-w-sm mx-auto flex flex-col gap-5">
+    <img src="/logo.png" class="mb-4" alt="Logo de la página web">
+
+    <div class="flex bg-[#e0e1e1] rounded-2xl p-1 font-bold">
+        <a [routerLink]="['login']" 
+            [class]="isActive('login') ? 'bg-white text-[#444040]' : 'text-[#847f7f]'" 
+            class="flex-1 py-2 px-4 rounded-xl transition-colors duration-300 text-center">
+            Inicia Sesión
+        </a>
+        <a [routerLink]="['register']" 
+            [class]="isActive('register') ? 'bg-white text-[#444040]' : 'text-[#847f7f]'" 
+            class="flex-1 py-2 px-4 rounded-xl transition-colors duration-300 text-center">
+            Registro
+        </a>
+    </div>
+
+    <router-outlet />
+</div>
