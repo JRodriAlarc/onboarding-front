@@ -1,0 +1,4 @@
+nav a.active i{
+    color: #3eb6a8;
+    transition: color 0.3s ease;
+}

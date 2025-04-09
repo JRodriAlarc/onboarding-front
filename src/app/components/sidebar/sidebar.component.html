@@ -1,0 +1,25 @@
+<nav class="flex flex-col justify-between p-6 bg-[#c8dce4] rounded-2xl h-full text-3xl text-[#444040] mr-6">
+    <div class="flex flex-col items-center gap-16 mt-20">
+
+        <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact:true }">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a routerLink="/home/information" routerLinkActive="active">
+            <i class="fa-solid fa-file-contract"></i>
+        </a>
+
+        <a routerLink="/home/location" routerLinkActive="active">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+        
+        <a routerLink="/home/documents" routerLinkActive="active">
+            <i class="fa-solid fa-folder"></i>
+        </a>
+        
+    </div>
+
+    <a routerLink="/home/settings" routerLinkActive="active" class="mt-auto mb-6 text-center">
+        <i class="fa-solid fa-gear"></i>
+    </a>
+</nav>
