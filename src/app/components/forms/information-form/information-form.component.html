@@ -1,0 +1,85 @@
+<h1 class="font-bold text-xl text-[#444040] my-5">Información Personal</h1>
+<div class="flex w-full h-[60vh] justify-center items-center gap-6 mb-6">
+    <form class="grid grid-cols-2 gap-6">
+        <div>
+            <label for="firstName" class="mb-2 font-bold">Nombre</label>
+            <input type="text" id="firstName" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese su nombre" />
+        </div>
+    
+        <div>
+            <label for="lastName" class="mb-2 font-bold">Apellidos</label>
+            <input type="text" id="lastName" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese sus apellidos" />
+        </div>
+    
+        <div class="relative">
+            <label for="dateBirth" class="mb-2 font-bold">Fecha de Nacimiento</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <input datepicker id="dateBirth" type="text" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full ps-10 p-2.5" placeholder="Fecha de Nacimiento">
+            </div>
+        </div>
+    
+        <div>
+            <label for="nationality" class="mb-2 font-bold">Nacionalidad</label>
+            <select id="nationality" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5">
+                <option selected>Selecione una Opción</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="gender" class="mb-2 font-bold">Género</label>
+            <select id="gender" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2]  w-full p-2.5">
+                <option selected>Selecione una Opción</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="maritalStatus" class="mb-2 font-bold">Estado Civil</label>
+            <select id="maritalStatus" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2]  w-full p-2.5">
+                <option selected>Selecione una Opción</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="phone-input" class="mb-2 font-bold">Número de Teléfono:</label>
+            <input type="text" id="phone-input" aria-describedby="helper-text-explanation" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2]  w-full p-2.5" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ingrese su número teléfonico" />
+        </div>
+    
+        <div>
+            <label for="email" class="mb-2 font-bold">Correo Electrónico</label>
+            <input type="email" id="email" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese su correo electrónico" />
+        </div>
+        
+        <div>
+            <label for="identificationType" class="mb-2 font-bold">Tipo de Identificación</label>
+            <select id="identificationType" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2]  w-full p-2.5">
+                <option selected>Selecione una Opción</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div>
+    
+        <div>
+            <label class="mb-2 font-bold" for="file_input">Identificación Oficial</label>
+            <input class="w-full p-2.5 text-sm border-2 border-[#cdcdcd] text-[#847f7f] rounded-2xl cursor-pointer focus:outline-none" id="file_input" type="file" accept=".pdf,.jpg,.jpeg,.png">
+        </div>
+    
+        <button type="submit" class="bg-[#3eb6a8] text-white font-bold px-6 py-2 rounded-2xl cursor-pointer self-center">Guardar Información</button>
+    </form>
+</div>
