@@ -9,6 +9,7 @@ import { HeaderFormsComponent } from './components/header-forms/header-forms.com
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
 import { RegisterFormComponent } from './components/forms/register-form/register-form.component';
 import { AuthComponent } from './pages/auth/auth.component';
+import { ForgotPasswordComponent } from './components/forms/forgot-password/forgot-password.component';
 
 export const routes: Routes = [
     {
@@ -28,6 +29,11 @@ export const routes: Routes = [
                 path: 'register',
                 component: RegisterFormComponent,
                 title: 'Crea una Cuenta'
+              },
+              {
+                path: 'forgot-password',
+                component: ForgotPasswordComponent,
+                title: 'Recuperar Contraseña'
               },
               {
                 path: '',
