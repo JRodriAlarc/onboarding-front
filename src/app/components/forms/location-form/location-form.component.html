@@ -1,0 +1,60 @@
+<h1 class="font-bold text-xl text-[#444040] my-5">Dirección</h1>
+<div class="flex w-full h-[60vh] justify-center items-center gap-6 mb-6">
+    <form class="grid grid-cols-2 gap-6">
+        <div>
+            <label for="country" class="mb-2 font-bold">País</label>
+            <select id="country" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5">
+                <option selected>Selecione una Opción</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="state" class="mb-2 font-bold">Estado</label>
+            <select id="state" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5">
+                <option selected>Selecione una Opción</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="city" class="mb-2 font-bold">Ciudad</label>
+            <input type="text" id="city" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese el nombre de su ciudad" />
+        </div>
+    
+        <div>
+            <label for="zipCode" class="mb-2 font-bold">Código Postal</label>
+            <input type="text" id="zipCode" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese su código postal" />
+        </div>
+    
+        <div>
+            <label for="street" class="mb-2 font-bold">Calle</label>
+            <input type="text" id="street" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese el nombre de la calle" />
+        </div>
+    
+        <div>
+            <label for="number" class="mb-2 font-bold">Número</label>
+            <input type="number" id="number" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Ingrese el número exterior de su domicilio" />
+        </div>
+    
+        <div>
+            <label for="details" class="mb-2 font-bold">Detalles Adicionales</label>
+            <input type="text" id="details" class="border-2 border-[#cdcdcd] text-[#847f7f] text-sm rounded-2xl focus:ring-[#0097b2] focus:border-[#0097b2] w-full p-2.5" placeholder="Piso, Apartamento, Referencias" />
+        </div>
+    
+        <div>
+            <label class="mb-2 font-bold" for="address">Comprobante de Domicilio</label>
+            <input class="w-full mb-5 text-sm border-2 border-[#cdcdcd] text-[#847f7f] rounded-2xl cursor-pointer focus:outline-none p-2.5" id="address" type="file" accept=".pdf,.jpg,.jpeg,.png">
+        </div>
+    
+        <div>
+            <button type="submit" class="bg-[#3eb6a8] text-white font-bold px-6 py-2 rounded-2xl cursor-pointer self-center w-full">Guardar Dirección</button>
+        </div>
+    </form>
+</div>
