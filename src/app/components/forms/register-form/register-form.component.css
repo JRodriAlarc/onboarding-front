@@ -1,0 +1,26 @@
+/* Estilo general del scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+/* Estilo del track (la pista del scrollbar) */
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #cdcdcd;
+    border-radius: 0.5rem;
+}
+
+/* Estilo del thumb (la parte arrastrable del scrollbar) */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #3eb6a8;
+    border-radius: 0.5rem;
+}
+
+/* Cambia el color del thumb cuando el usuario pasa el mouse sobre él */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #0097b2;
+}
+
+/* Cambia el color del thumb cuando está activo (click) */
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+    background: #89a8b2;
+}
