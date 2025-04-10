@@ -10,6 +10,7 @@ import { LoginFormComponent } from './components/forms/login-form/login-form.com
 import { RegisterFormComponent } from './components/forms/register-form/register-form.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { ForgotPasswordComponent } from './components/forms/forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './pages/reset-password/reset-password.component';
 
 export const routes: Routes = [
     {
@@ -33,7 +34,7 @@ export const routes: Routes = [
               {
                 path: 'forgot-password',
                 component: ForgotPasswordComponent,
-                title: 'Recuperar Contraseña'
+                title: 'Recupera tu Contraseña'
               },
               {
                 path: '',
@@ -75,6 +76,11 @@ export const routes: Routes = [
                 component: SettingsFormComponent
             }
         ]
+    },
+    {
+      path: 'reset-password',
+      title: 'Restablece tu Contraseña',
+      component: ResetPasswordComponent
     },
     {
         path: '**',
